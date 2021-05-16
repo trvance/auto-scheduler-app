@@ -3,8 +3,18 @@ import { makeStyles } from '@material-ui/core'
 
 export default makeStyles((theme) => ({
     root: {
-        marginBottom:'-15%',
+        position: 'relative',
+
+        //right: 200,
+        // height: '700',
+        // marginBottom:'25%',
+        marginTop: '10vh',
         [theme.breakpoints.down('sm')]: {
+            position: 'static',
+            marginTop: '5%',
+        },
+        [theme.breakpoints.down('xs')]: {
+            position: 'static',
             marginTop: '15%',
         }
         

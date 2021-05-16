@@ -20,17 +20,17 @@ const HomePage = ({setPage, setAddEmployee}) => {
 
     return (
         <Grid container className={classes.root} direction='column' justify='center' alignItems='center' spacing={0}>
-            <Grid item xs={12}>
+            <Grid item >
                 <CardMedia className={classes.titleCard} image={Surcheerios}>
                     <Slide in direction='left' timeout={500}>
                         <img className={classes.logo} src={leafyAvocado}/>
                     </Slide>
                 </CardMedia>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item >
                 <GenerateScheduleButton setPage={setPage} />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item >
                 <Button style={{ color:theme.palette.secondary.main, backgroundColor:theme.palette.background.paper, width: 250, height: 50 }} variant='contained' onClick={handleAddEmployeeButton}>
                     Add Employee
                 </Button>
